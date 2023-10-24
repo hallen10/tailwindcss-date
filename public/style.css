@@ -589,6 +589,11 @@ video {
   height: 100vh;
 }
 
+.rotate-3 {
+  --tw-rotate: 3deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .items-center {
   align-items: center;
 }
@@ -612,10 +617,15 @@ video {
   color: rgb(126 34 206 / var(--tw-text-opacity));
 }
 
+.invert {
+  --tw-invert: invert(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 /* Your Awesome Styles */
 
 * {
-  outline: 1px dotted gray;
+  /*outline: 1px dotted gray;*/
 }
 
 @media (min-width: 768px) {
